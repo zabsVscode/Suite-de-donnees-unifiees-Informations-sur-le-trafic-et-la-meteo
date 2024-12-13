@@ -4,7 +4,7 @@ import requests
 class WeatherAPI:
     def __init__(self, username, api_key=None):
         self.username = username
-        self.api_key = api_key or os.getenv("OPENWEATHER_API_KEY")  # Utilise la clé API si fournie, sinon récupère celle de l'environnement
+        self.api_key = api_key or os.getenv("OPENWEATHER_API_KEY")
         self.base_geonames_url = "http://api.geonames.org"
         self.base_openweather_url = "http://api.openweathermap.org/data/2.5/weather"
 

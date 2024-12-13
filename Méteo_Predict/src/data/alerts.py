@@ -52,8 +52,8 @@ def generate_alerts(weather_data):
 
 if __name__ == "__main__":
     # Paramètres pour l'API
-    username = "anthonyabs"  # Remplace par ton nom d'utilisateur GeoNames
-    api_key = "OPENWEATHER_API_KEY"  # Remplace par ta clé API OpenWeather (n'oublie pas de la remplacer par ta vraie clé)
+    username = "anthonyabs"  
+    api_key = "OPENWEATHER_API_KEY" 
     city = "Paris"  # Ville pour récupérer les données météo
 
     # Créer une instance de l'API

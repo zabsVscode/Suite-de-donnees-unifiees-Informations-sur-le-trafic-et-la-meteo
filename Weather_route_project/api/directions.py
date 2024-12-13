@@ -1,7 +1,7 @@
 import requests
 
 def get_directions(origin, destination):
-    API_KEY = 'TON_API_KEY_GOOGLE'
+    API_KEY = 'API_KEY_GOOGLE'
     url = f"https://maps.googleapis.com/maps/api/directions/json?origin={origin}&destination={destination}&key={API_KEY}"
     response = requests.get(url)
     data = response.json()
