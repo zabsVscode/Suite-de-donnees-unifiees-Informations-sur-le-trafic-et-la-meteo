@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7371685ac6ef775d43029a2d1127f12b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7371685ac6ef775d43029a2d1127f12b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7371685ac6ef775d43029a2d1127f12b = L.map(
+                "map_7371685ac6ef775d43029a2d1127f12b",
+                {
+                    center: [46.603354, 1.888334],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_16d6b09aca1c8b1f3b6c6b45f0b08245 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_16d6b09aca1c8b1f3b6c6b45f0b08245.addTo(map_7371685ac6ef775d43029a2d1127f12b);
+        
+    
+            var marker_db9d68376080655e09a5b398293e1130 = L.marker(
+                [48.85341, 2.3488],
+                {}
+            ).addTo(map_7371685ac6ef775d43029a2d1127f12b);
+        
+    
+            var icon_01d5af213bfa083ec4ddc39764278dfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_db9d68376080655e09a5b398293e1130.setIcon(icon_01d5af213bfa083ec4ddc39764278dfc);
+        
+    
+        var popup_9f2d9f47e1ed96c2cb20ce49cd09f3d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b87321fb8acb5a9f85edf56e00d16ab9 = $(`<div id="html_b87321fb8acb5a9f85edf56e00d16ab9" style="width: 100.0%; height: 100.0%;">Paris Pas d'alerte</div>`)[0];
+                popup_9f2d9f47e1ed96c2cb20ce49cd09f3d2.setContent(html_b87321fb8acb5a9f85edf56e00d16ab9);
+            
+        
+
+        marker_db9d68376080655e09a5b398293e1130.bindPopup(popup_9f2d9f47e1ed96c2cb20ce49cd09f3d2)
+        ;
+
+        
+    
+    
+            var marker_afb1ede256ca347ca7db839ca3d4aa64 = L.marker(
+                [48.85341, 2.3488],
+                {}
+            ).addTo(map_7371685ac6ef775d43029a2d1127f12b);
+        
+    
+            var icon_d17607ac57d029f3166ef526c1bef654 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_afb1ede256ca347ca7db839ca3d4aa64.setIcon(icon_d17607ac57d029f3166ef526c1bef654);
+        
+    
+        var popup_d657602dc01ed40a1bb0a7e95e2e54c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd5027ec7e3701d9b26de93aa6582935 = $(`<div id="html_dd5027ec7e3701d9b26de93aa6582935" style="width: 100.0%; height: 100.0%;">Marseille Pas d'alerte</div>`)[0];
+                popup_d657602dc01ed40a1bb0a7e95e2e54c3.setContent(html_dd5027ec7e3701d9b26de93aa6582935);
+            
+        
+
+        marker_afb1ede256ca347ca7db839ca3d4aa64.bindPopup(popup_d657602dc01ed40a1bb0a7e95e2e54c3)
+        ;
+
+        
+    
+    
+            var marker_4c5ad8c75ef5dc15a3e49171267909a6 = L.marker(
+                [48.85341, 2.3488],
+                {}
+            ).addTo(map_7371685ac6ef775d43029a2d1127f12b);
+        
+    
+            var icon_6603a9f21f78dc7915f73c0fbed03eea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4c5ad8c75ef5dc15a3e49171267909a6.setIcon(icon_6603a9f21f78dc7915f73c0fbed03eea);
+        
+    
+        var popup_8a37503bde95fb09dc07c8bf0b1ad2ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2dc95ecfba67d99242a9598d121b6e92 = $(`<div id="html_2dc95ecfba67d99242a9598d121b6e92" style="width: 100.0%; height: 100.0%;">Lyon Pas d'alerte</div>`)[0];
+                popup_8a37503bde95fb09dc07c8bf0b1ad2ec.setContent(html_2dc95ecfba67d99242a9598d121b6e92);
+            
+        
+
+        marker_4c5ad8c75ef5dc15a3e49171267909a6.bindPopup(popup_8a37503bde95fb09dc07c8bf0b1ad2ec)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,12 @@
+Google Maps platform : 
+
+API Air Quality : L'API Air Quality vous permet de demander des données sur la qualité de l'air pour un lieu spécifique, y compris plus de 70 indices de qualité de l'air, des polluants et des recommandations sanitaires. Elle couvre plus de 100 pays avec une résolution de 500 x 500 mètres.
+
+## URL : https://developers.google.com/maps/documentation/air-quality?hl=fr
+
+
+Options  : 
+https://openweathermap.org/api/air-pollution
+
+
+https://api-docs.iqair.com/

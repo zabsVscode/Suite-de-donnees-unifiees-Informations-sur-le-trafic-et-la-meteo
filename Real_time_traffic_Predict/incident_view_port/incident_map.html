@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carte de Trafic</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([48.8566, 2.3522], 12); // Coordonnées par défaut
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        L.circleMarker([48.8566, 2.3522], {
+            radius: 8,
+            color: 'red',
+            fillOpacity: 0.5
+        }).addTo(map).bindPopup("Incident: high");
+
+        L.circleMarker([48.86, 2.35], {
+            radius: 8,
+            color: 'orange',
+            fillOpacity: 0.5
+        }).addTo(map).bindPopup("Incident: medium");
+        
+    </script>
+</body>
+</html>
